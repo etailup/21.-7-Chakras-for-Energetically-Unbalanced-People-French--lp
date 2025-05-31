@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Libérez Votre Pouvoir Intérieur : Guide Gratuit des 7 Chakras</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-shadow { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .btn-hover:hover { transform: translateY(-2px); transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .pulse-animation { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .fa-spinner { animation: spin 1s linear infinite; }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Hero Section -->
+    <div class="gradient-bg min-h-screen flex items-center justify-center px-4 py-12 md:py-0">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Column - Content -->
+                <div class="text-white">
+                    <div class="mb-6">
+                        <span class="bg-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold">
+                            🌟 GUIDE GRATUIT
+                        </span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        <span class="block">Alignez Vos</span>
+                        <span class="block text-yellow-300">7 Chakras</span>
+                        <span class="block">Libérez Votre Pouvoir</span>
+                    </h1>
+
+                    <p class="text-xl mb-8 text-gray-200">
+                        Le guide essentiel pour comprendre, purifier et équilibrer vos centres énergétiques. Surmontez l'anxiété, les blocages émotionnels et transformez votre vie. ✨
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-yin-yang text-green-400 mr-3 text-xl"></i>
+                            <span>Compréhension profonde des 7 chakras et leur rôle.</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-unlock-alt text-green-400 mr-3 text-xl"></i>
+                            <span>Techniques puissantes pour débloquer l'énergie stagnante.</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart-pulse text-green-400 mr-3 text-xl"></i>
+                            <span>Exercices pratiques pour une harmonisation quotidienne.</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-comments text-green-400 mr-3 text-xl"></i>
+                            <span>Conseils pour gérer les émotions et améliorer vos relations.</span>
+                        </div>
+                    </div>
+
+                    <div class="text-2xl font-bold text-yellow-300">
+                        100% GRATUIT - Téléchargement Immédiat !
+                    </div>
+                </div>
+
+                <!-- Right Column - Form -->
+                <div class="bg-white rounded-2xl p-8 card-shadow">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">
+                            Accédez Instantanément à Votre Guide !
+                        </h3>
+                        <p class="text-gray-600">
+                            Entrez vos informations pour recevoir le guide complet.
+                        </p>
+                    </div>
+
+                    <form id="leadForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-user mr-2 text-gray-500"></i>Nom Complet
+                            </label>
+                            <input type="text" id="name" name="name" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                                   placeholder="Votre nom complet">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-envelope mr-2 text-gray-500"></i>Email
+                            </label>
+                            <input type="email" id="email" name="email" required
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition duration-200"
+                                   placeholder="votre.email@example.com">
+                        </div>
+
+                        <!-- Hidden Fields -->
+                        <input type="hidden" id="language" name="language" value="French">
+                        <input type="hidden" name="book_title" value="7 Chakras pour Personnes Énergétiquement Déséquilibrées: Comment Débloquer Votre Pouvoir Intérieur entre Émotions Refoulées, Relations Toxiques et Anxiété Quotidienne">
+                        <input type="hidden" name="main_category" value="Spiritual">
+                        <input type="hidden" name="author" value="Sara Y.">
+                        <input type="hidden" name="number_title" value="21. 7 Chakras for Energetically Unbalanced People">
+                        <input type="hidden" name="number_title_language" value="21. 7 Chakras for Energetically Unbalanced People (French)">
+                        <input type="hidden" name="extra_folder_link" value="https://drive.google.com/drive/folders/1iIpsLeCCKdM1Bv6qP-_Bm3dVM8m4OcBg">
+                        <input type="hidden" name="extra_pdf_link" value="https://drive.google.com/uc?export=download&id=1fHwvkCpLhLkWm8Vp0AtCBRf_cCMHM0U_">
+                        <input type="hidden" name="review_link" value="https://pxl.to/21-7cppd-sy-fr-review">
+
+                        <button type="submit"
+                                class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-bold py-4 px-6 rounded-lg btn-hover pulse-animation">
+                            <i class="fas fa-download mr-2"></i>
+                            TÉLÉCHARGER MON GUIDE GRATUIT
+                        </button>
+                    </form>
+
+                    <div class="mt-6 text-center">
+                        <p class="text-xs text-gray-500">
+                            <i class="fas fa-lock mr-1"></i>
+                            Vos données sont en sécurité et ne seront jamais partagées.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                    Ce Que Vous Allez Découvrir Dans Ce Guide
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Un parcours initiatique pour harmoniser votre énergie vitale, libérer votre potentiel intérieur et vivre une vie plus équilibrée et épanouie.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-indigo-50 border border-indigo-100">
+                    <div class="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-atom text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Équilibre Énergétique</h3>
+                    <p class="text-gray-600">
+                        Identifiez les déséquilibres de vos chakras et apprenez à les réaligner pour une vitalité et une clarté retrouvées.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 rounded-lg bg-green-50 border border-green-100">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-hand-holding-heart text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">Guérison Émotionnelle</h3>
+                    <p class="text-gray-600">
+                        Libérez les émotions refoulées, apaisez l'anxiété et cultivez une paix intérieure durable pour des relations saines.
+                    </p>
+                </div>
+
+                <div class="text-center p-6 rounded-lg bg-purple-50 border border-purple-100">
+                    <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <i class="fas fa-brain text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-3">Clarté Mentale & Intuition</h3>
+                    <p class="text-gray-600">
+                        Développez votre intuition, connectez-vous à votre sagesse intérieure et élevez votre conscience pour prendre de meilleures décisions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                    Ils Ont Transformé Leur Vie Grâce Aux Chakras
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg card-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-500 text-white rounded-full flex items-center justify-center mr-4 text-xl font-bold">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Sophie L.</h4>
+                            <p class="text-gray-600 text-sm">En quête de sérénité</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Ce guide a été une véritable révélation ! Je me sentais submergée par le stress et les émotions négatives. Comprendre mes chakras m'a offert des outils concrets pour retrouver calme et clarté au quotidien."
+                    </p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg card-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center mr-4 text-xl font-bold">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Marc D.</h4>
+                            <p class="text-gray-600 text-sm">Explorateur du bien-être</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Clair, pratique et incroyablement puissant. J'ai enfin pu identifier des blocages dont je n'avais pas conscience et commencer un vrai travail de transformation. Un indispensable pour quiconque s'intéresse aux chakras !"
+                    </p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="gradient-bg py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold text-white mb-6">
+                Prêt à Débloquer Votre Potentiel ? Téléchargez Votre Guide !
+            </h2>
+            <p class="text-xl text-gray-200 mb-8">
+                Des milliers de personnes ont déjà commencé leur voyage vers l'équilibre et l'harmonie intérieure. C'est votre tour de briller !
+            </p>
+            <a href="#leadForm" class="inline-block bg-yellow-400 text-black font-bold py-4 px-8 rounded-lg btn-hover text-lg pulse-animation">
+                <i class="fas fa-gift mr-2"></i>
+                JE VEUX MON GUIDE GRATUIT
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Guide des 7 Chakras. Tous droits réservés.</p>
+            <p class="text-gray-400 text-sm mt-2">
+                <i class="fas fa-shield-alt mr-1"></i>
+                Vos données sont sécurisées et protégées.
+            </p>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const submitButton = e.target.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        const originalButtonClasses = Array.from(submitButton.classList);
+
+
+        // Trigger blur events to show inline validation messages if any
+        nameInput.dispatchEvent(new Event('blur'));
+        emailInput.dispatchEvent(new Event('blur'));
+
+        // Check for error messages added by blur handlers or empty fields
+        const nameError = nameInput.parentNode.querySelector('.error-message');
+        const emailError = emailInput.parentNode.querySelector('.error-message');
+        const isNameInvalid = nameInput.value.trim().length < 2 || nameError;
+        const isEmailInvalid = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value) || emailError;
+
+        if (isNameInvalid || isEmailInvalid) {
+            submitButton.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i>VÉRIFIEZ VOS DONNÉES';
+            submitButton.className = 'w-full bg-orange-500 text-white font-bold py-4 px-6 rounded-lg btn-hover'; // Simplified classes for error
+
+            setTimeout(() => {
+                submitButton.innerHTML = originalButtonText;
+                submitButton.className = originalButtonClasses.join(' ');
+            }, 3000);
+
+            if (isNameInvalid) {
+                nameInput.focus();
+            } else if (isEmailInvalid) {
+                emailInput.focus();
+            }
+            return;
+        }
+
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>ENVOI EN COURS...';
+        submitButton.disabled = true;
+        submitButton.classList.remove('bg-gradient-to-r', 'from-indigo-600', 'to-purple-600');
+        submitButton.classList.add('bg-gray-500');
+
+
+        const formData = {
+            name: nameInput.value,
+            email: emailInput.value,
+            language: document.getElementById('language').value,
+            book_title: document.querySelector('input[name="book_title"]').value,
+            main_category: document.querySelector('input[name="main_category"]').value,
+            author: document.querySelector('input[name="author"]').value,
+            number_title: document.querySelector('input[name="number_title"]').value,
+            number_title_language: document.querySelector('input[name="number_title_language"]').value,
+            extra_folder_link: document.querySelector('input[name="extra_folder_link"]').value,
+            extra_pdf_link: document.querySelector('input[name="extra_pdf_link"]').value,
+            review_link: document.querySelector('input[name="review_link"]').value
+        };
+
+        try {
+            const response = await fetch('https://hook.integrator.boost.space/mqntylhrehljw4p5tkxjpxj28icglsot', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                submitButton.innerHTML = '<i class="fas fa-check-circle mr-2"></i>ACCÈS ACCORDÉ ! REDIRECTION...';
+                submitButton.classList.remove('bg-gray-500');
+                submitButton.classList.add('bg-green-500');
+                // Button remains disabled as we are redirecting
+
+                setTimeout(() => {
+                    window.location.href = 'https://drive.google.com/uc?export=download&id=1fHwvkCpLhLkWm8Vp0AtCBRf_cCMHM0U_';
+                }, 1500);
+
+            } else {
+                const errorData = await response.json().catch(() => ({ message: 'Réponse non-JSON du serveur' }));
+                console.error('Erreur serveur:', response.status, errorData);
+                throw new Error(`Erreur serveur: ${response.status} - ${errorData.message || 'Erreur inconnue'}`);
+            }
+
+        } catch (error) {
+            console.error('Erreur de soumission:', error);
+            submitButton.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i>ERREUR - VEUILLEZ RÉESSAYER';
+            submitButton.classList.remove('bg-gray-500');
+            submitButton.classList.add('bg-red-500');
+
+            setTimeout(() => {
+                submitButton.innerHTML = originalButtonText;
+                submitButton.disabled = false;
+                submitButton.className = originalButtonClasses.join(' '); // Restore all original classes
+            }, 4000);
+        }
+    });
+
+    document.querySelectorAll('a[href="#leadForm"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetElement = document.getElementById('leadForm');
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => {
+                    const firstInput = targetElement.querySelector('input[type="text"], input[type="email"]');
+                    if (firstInput) firstInput.focus();
+                }, 500);
+            }
+        });
+    });
+
+    document.getElementById('email').addEventListener('blur', function() {
+        const email = this.value;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const isValid = emailRegex.test(email);
+        const existingErrorMsg = this.parentNode.querySelector('.error-message');
+
+        if (existingErrorMsg) existingErrorMsg.remove();
+
+        if (email && !isValid) {
+            this.classList.add('border-red-500');
+            this.classList.remove('border-gray-300');
+            const errorMsg = document.createElement('p');
+            errorMsg.className = 'error-message text-red-500 text-xs mt-1';
+            errorMsg.innerHTML = '<i class="fas fa-exclamation-circle mr-1"></i>Veuillez entrer une adresse e-mail valide.';
+            this.parentNode.insertBefore(errorMsg, this.nextSibling);
+        } else {
+            this.classList.remove('border-red-500');
+            this.classList.add('border-gray-300');
+        }
+    });
+
+    document.getElementById('name').addEventListener('blur', function() {
+        const name = this.value.trim();
+        const existingErrorMsg = this.parentNode.querySelector('.error-message');
+
+        if (existingErrorMsg) existingErrorMsg.remove();
+
+        if (name && name.length < 2) {
+            this.classList.add('border-red-500');
+            this.classList.remove('border-gray-300');
+            const errorMsg = document.createElement('p');
+            errorMsg.className = 'error-message text-red-500 text-xs mt-1';
+            errorMsg.innerHTML = '<i class="fas fa-exclamation-circle mr-1"></i>Le nom doit comporter au moins 2 caractères.';
+            this.parentNode.insertBefore(errorMsg, this.nextSibling);
+        } else {
+            this.classList.remove('border-red-500');
+            this.classList.add('border-gray-300');
+        }
+    });
+</script>
+
+</body>
+</html>
